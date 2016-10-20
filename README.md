@@ -9,9 +9,7 @@ This is like ``OneStep`` about ``Smartisan OS 3``.
 
 ### Screenshots
 
-![SimpleOneStep](screenshots.gif)
-
-![OneStep](screenshots2.gif)
+![SimpleOneStep](screenshots.gif) ![OneStep](screenshots2.gif)
 
 -------
 
@@ -22,4 +20,4 @@ This is like ``OneStep`` about ``Smartisan OS 3``.
 
 ### 小贴士
 
-上图截取的锤子的``OneStep``中，图库多选实现方式可参见：[Android-AbsListView-Drag-And-Drop](https://github.com/gavinliu/Android-AbsListView-Drag-And-Drop）
+上图截取的锤子的``OneStep``中，图库多选实现方式可参见：https://github.com/gavinliu/Android-AbsListView-Drag-And-Drop
