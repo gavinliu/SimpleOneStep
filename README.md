@@ -1,6 +1,6 @@
 # SimpleOneStep
 
-This is like ``OneStep`` about ``Smartisan OS 3``.
+The SimpleOneStep is like ``OneStep`` about ``Smartisan OS 3``.
 
 ### Feature
 
@@ -21,3 +21,5 @@ This is like ``OneStep`` about ``Smartisan OS 3``.
 ### 小贴士
 
 上图截取的锤子的``OneStep``中，图库多选实现方式可参见：https://github.com/gavinliu/Android-AbsListView-Drag-And-Drop
+
+* http://www.smartisan.com/os/#/os-3
