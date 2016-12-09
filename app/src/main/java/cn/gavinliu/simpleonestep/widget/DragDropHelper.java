@@ -10,6 +10,7 @@ import android.view.View;
 public class DragDropHelper {
 
     private float mMotionDownX, mMotionDownY;
+    private boolean isInit = false;
 
     private DragView mDragView;
     private DropView mDropView;
@@ -25,6 +26,7 @@ public class DragDropHelper {
     }
 
     public void startDrag(View v) {
+        isInit = true;
         mDragView = new DragView(v.getContext(), v);
         mDragView.setImageBitmap(getViewBitmap(v));
         mDragView.dragStart();
@@ -38,6 +40,7 @@ public class DragDropHelper {
                 break;
 
             case MotionEvent.ACTION_MOVE:
+                if(!isInit) return false;
                 int moveX = (int) (mMotionDownX - event.getRawX());
                 int moveY = (int) (mMotionDownY - event.getRawY());
 
@@ -55,9 +58,11 @@ public class DragDropHelper {
                         if (mOnDropedListener != null) {
                             mOnDropedListener.onDroped();
                         }
-                    } else {
+                    } else if (mDragView != null) {
                         mDragView.dragEnd();
+                        mDragView = null;
                     }
+                    isInit = false;
                 }
                 break;
         }
